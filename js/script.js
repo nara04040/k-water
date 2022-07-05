@@ -1,6 +1,7 @@
 $(document).ready();
-
 window.onload = function(){
+    //랜덤천사
+    
     //메뉴기능
     let header = $('.header');
     let gnb = $('.gnb');
