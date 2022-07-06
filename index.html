@@ -13,39 +13,37 @@
     <meta property="og:description" content="물이 여는 미래, 물로 나누는 행복" />
     <meta property="og:image" content="images/logo.png" />
     <meta name="twitter:image" content="images/logo.png" />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
         content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes, target-densitydpi=device-dpi" />
     <title>K-water</title>
-    <!-- jquery -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="js/prefixfree.min.js"></script>
     <!--[if lt IE 9]> 
-    <script src="js/html5shiv.js"></script>
+        <script src="js/html5shiv.js"></script>
     <![endif]-->
     <script src="js/respond.min.js"></script>
-    <link rel="stylesheet" href="js/swiper/swiper.css">
-    <link rel="stylesheet" href="js/swiper/swiper.min.css">
-    <script src="js/swiper/swiper.js"></script>
     <link rel="stylesheet" href="css/reset.css">
-
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="js/swiper/swiper.min.css">
+    <script src="js/swiper/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 
 </head>
 
 <body>
-    <!-- fix-menu -->
-    <div class="fix-wrap"></div>
+    <!-- 고정메뉴 -->
+    <div class="fix-wrap">
+    </div>
     <div class="wrap">
-        <!-- header -->
+        <!-- 상단 -->
         <header class="header">
             <div class="inner">
                 <a href="#" class="logo" title="K-water"></a>
+
                 <nav class="gnb">
-                    <ul class="menu">
+                    <ul class="menu ">
                         <li>
                             <a href="#" class="mainmenu">ESG경영</a>
                             <ul class="submenu">
@@ -102,8 +100,9 @@
                         </li>
                     </ul>
                 </nav>
+
                 <div class="help">
-                    <ul class="help-list">
+                    <ul class="help-list clearfix">
                         <li><a href="#" title="Language">english</a></li>
                         <li><a href="#" title="Search"><img src="images/main_search.png" alt="내용검색"></a></li>
                         <li><a href="#" title="Sitemap"><img src="images/main_allmenu.png" alt="사이트맵"></a></li>
@@ -111,12 +110,16 @@
                 </div>
             </div>
         </header>
-        <!-- visual -->
+        <!--// 상단  -->
+        <!-- 비주얼 -->
         <section class="visual">
             <div class="inner">
-                <img src="/images/visual_image.png" alt="" class="visual-img">
+
+                <img src="images/visualimg.png" alt="K-water" class="visual-img">
+
                 <div class="visual-wrap">
                     <button class="sw-visual-prev"></button>
+
                     <div class="swiper-container sw-visual">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><a href="#" class="visual-icon visual-icon1">사이트맵</a></div>
@@ -133,16 +136,19 @@
                             <div class="swiper-slide"><a href="#" class="visual-icon visual-icon12">사보</a></div>
                         </div>
                     </div>
+
                     <button class="sw-visual-next"></button>
                 </div>
+
             </div>
         </section>
-        <!-- about -->
+        <!--// 비주얼  -->
+        <!-- 소개 -->
         <section class="about">
             <div class="inner">
                 <div class="title-wrap">
                     <i class="title-icon">
-                        <img src="images/main_h3_title.png" alt="">
+                        <img src="images/main_h3_title.png" alt="about">
                     </i>
                     <h2 class="title-h2">K-water</h2>
                     <span class="title-desc">국가 물안전과 국민 물복지의 초석을 다져온 K-water!</span>
@@ -153,98 +159,154 @@
                             <a href="#" class="pd-40">
                                 <h3 class="about-box-h3 about-box-w about-box-after-w">K-water CEO</h3>
                                 <p class="about-box-txt about-box-w">깨끗하고 소중한 물로 <br>더 행복한 대한민국을 <br>만들겠습니다.</p>
+                                <span class="arrow_w"></span>
                             </a>
-
                         </div>
                         <div class="about-box-round about-box-symbol">
                             <a href="#" class="pd-40">
                                 <h3 class="about-box-h3">안전·환경</h3>
                                 <p class="about-box-txt">K-water의 안전경영헌장을 소개합니다.</p>
+                                <span class="arrow_b"></span>
                             </a>
                         </div>
                     </div>
                     <div class="about-box about-box-center">
-                        <div class="about-slide"></div>
+                        <div class="about-slide">
+
+                            <div class="swiper-container sw-about">
+
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <img src="images/about-1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <img src="images/about-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="sw-about-control clearfix">
+
+                                <span class="sw-about-title">K-water 팝업존</span>
+
+                                <div class="sw-about-bt">
+                                    <div class="sw-about-pg"></div>
+                                    <button class="sw-about-prev"></button>
+                                    <button class="sw-about-pause"></button>
+                                    <button class="sw-about-next"></button>
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
                     <div class="about-box about-box-right">
                         <div class="about-box-round mb-36 about-box-member">
                             <a href="#" class="pd-40">
                                 <h3 class="about-box-h3">조직도/직원검색</h3>
-                                <p class="about-box-txt">깨끗한 물을 만드는 <br> K-water의 가족입니다.</p>
+                                <p class="about-box-txt">깨끗한 물을 만드는 <br>K-water의 가족입니다.</p>
+                                <span class="arrow_b"></span>
                             </a>
-
                         </div>
-                        <div class="about-box-round about-box-sns about-box-char-1">
-                            <a href="#" class="pd-40">
-                                <h3>K-water SNS</h3>
-                            </a>
+                        <div class="about-box-round about-box-sns">
+                            <h2 class="about-box-sns-title">
+                                K-water SNS
+                            </h2>
+
+                            <div class="sns-icon-wrap">
+                                <a href="#" class="sns-icon-yt">유튜브</a>
+                                <a href="#" class="sns-icon-fb">페이스북</a>
+                                <a href="#" class="sns-icon-is">인스타그램</a>
+                            </div>
+
+                            <div class="sns-icon-wrap">
+                                <a href="#" class="sns-icon-bg">블러그</a>
+                                <a href="#" class="sns-icon-pt">포스트</a>
+                                <a href="#" class="sns-icon-tw">트위터</a>
+                                <a href="#" class="sns-icon-kk">카카오톡</a>
+                            </div>
 
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- service -->
+        <!--// 소개  -->
+        <!-- 서비스 -->
         <section class="service">
             <div class="inner">
                 <div class="title-wrap">
                     <i class="title-icon">
-                        <img src="images/main_h3_title_fff.png" alt="">
+                        <img src="images/main_h3_title_fff.png" alt="service">
                     </i>
                     <h2 class="title-h2 color-w">서비스</h2>
                     <span class="title-desc color-w">K-water의 서비스에 쉽고 빠르게 접근해보세요.</span>
                 </div>
-                <div class="contents-wrap"></div>
+                <div class="contents-wrap">
+
+                </div>
             </div>
         </section>
-        <!-- news -->
+        <!--// 서비스  -->
+        <!-- 뉴스 -->
         <section class="news">
             <div class="inner">
                 <div class="title-wrap">
                     <i class="title-icon">
-                        <img src="images/main_h3_title.png" alt="">
+                        <img src="images/main_h3_title.png" alt="news">
                     </i>
                     <h2 class="title-h2">뉴스</h2>
                     <span class="title-desc">K-water의 다양한 소식을 공유합니다.</span>
                 </div>
-                <div class="contents-wrap"></div>
-            </div>
-    </div>
-    </section>
-    <!-- culture -->
-    <section class="culture">
-        <div class="inner">
-            <div class="title-wrap">
-                <i class="title-icon">
-                    <img src="images/main_h3_title.png" alt="">
-                </i>
-                <h2 class="title-h2 ">문화</h2>
-                <span class="title-desc">이 달의 K-water 문화관을 소개합니다.</span>
-            </div>
-            <div class="contents-wrap"></div>
-        </div>
-        </div>
-    </section>
-    <!-- recruit -->
-    <section class="recruit">
-        <div class="inner">
-            <div class="title-wrap">
-                <i class="title-icon">
-                    <img src="images/main_h3_title_fff.png" alt="">
-                </i>
-                <h2 class="title-h2 color-w">채용</h2>
-                <span class="title-desc color-w">K-water의 소중한 가족이 되어주세요.</span>
-            </div>
-            <div class="contests-wrap"></div>
-        </div>
-        </div>
-    </section>
-    <!-- footer -->
-    <footer class="footer">
-        <div class="inner">
+                <div class="contents-wrap">
 
-        </div>
-    </footer>
+                </div>
+            </div>
+        </section>
+        <!--// 뉴스 -->
+        <!-- 문화 -->
+        <section class="culture">
+            <div class="inner">
+                <div class="title-wrap">
+                    <i class="title-icon">
+                        <img src="images/main_h3_title.png" alt="culture">
+                    </i>
+                    <h2 class="title-h2">문화</h2>
+                    <span class="title-desc">이 달의 K-water 문화관을 소개합니다.</span>
+                </div>
+                <div class="contents-wrap">
+
+                </div>
+            </div>
+        </section>
+        <!--// 문화  -->
+        <!-- 채용 -->
+        <section class="job">
+            <div class="inner">
+                <div class="title-wrap">
+                    <i class="title-icon">
+                        <img src="images/main_h3_title_fff.png" alt="job">
+                    </i>
+                    <h2 class="title-h2 color-w">채용</h2>
+                    <span class="title-desc color-w">K-water의 소중한 가족이 되어주세요.</span>
+                </div>
+                <div class="contents-wrap">
+
+                </div>
+            </div>
+        </section>
+        <!--// 채용  -->
+        <!-- 하단 -->
+        <footer class="footer">
+            <div class="inner">
+            </div>
+        </footer>
+        <!-- 하단 -->
     </div>
 </body>
 
