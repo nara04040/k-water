@@ -25,7 +25,6 @@ a {
 
 html {
     font-size: 10px;
-    overflow: hidden;
 }
 
 body {
@@ -794,24 +793,215 @@ body {
     float: left;
     width: 23.2%;
     height: 100%;
-    border-top: 3px solid #fff;
     border: 2px solid #fff;
+    border-top: 3px solid #fff;
     margin-right: 1.78%;
     padding: 40px;
 }
 
 .service-center {
+    position: relative;
     float: left;
-    width: calc(100% - 46.4% - 3.56%);
     height: 100%;
+    width: calc(100% - 46.4% - 3.56%);
+}
+
+.service-top {
+    height: 45.5%;
+
+    border: 2px solid #fff;
+    border-top: 3px solid #fff;
+
+    padding: 30px;
+}
+
+.service-link-list {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.service-link-list li {
+    display: table-cell;
+    width: 25%;
+    height: 100%;
+    border-right: 1px dashed rgba(255, 255, 255, 0.6);
+}
+
+.service-link-list li:last-child {
+    border-right: none;
+}
+
+.service-link-list li a {
+    display: block;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.service-link-list li a img {
+    transition: all 1s;
+}
+
+.service-link-list li a:hover img {
+    animation: service-icon-ani 1.0s ease-in-out 0s infinite;
+
+}
+
+@keyframes service-icon-ani {
+    0% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(5%);
+    }
+
+    20% {
+        transform: translateY(10%);
+    }
+
+    25% {
+        transform: translateY(15%);
+    }
+
+    35% {
+        transform: translateY(10%);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    65% {
+        transform: translateY(-10%);
+    }
+
+    75% {
+        transform: translateY(-15%);
+    }
+
+    80% {
+        transform: translateY(-10%);
+    }
+
+    90% {
+        transform: translateY(-5%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.service-link-list li a span {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.service-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 48.8%;
+}
+
+.service-info {
+    float: left;
+    height: 100%;
+    width: 48.57%;
+    border: 2px solid #fff;
+    padding: 20px 30px;
+}
+
+.service-info-top {
+    text-align: center;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed #fff;
+}
+
+.service-info-top a {
+    font-size: 20px;
+    color: #fff;
+}
+
+.service-info-top a:hover {
+    text-decoration: underline;
+}
+
+.service-info-top a img {
+    margin-right: 15px;
+}
+
+.service-info-bottom {}
+
+.service-info-bottom strong {
+    margin-top: 25px;
+    float: left;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.service-info-list {
+    float: right;
+}
+
+.service-info-list li {
+    padding: 20px;
+    border-bottom: 1px dashed #fff;
+}
+
+.service-info-list li:last-child {
+    border-bottom: 0;
+}
+
+.service-info-list li a {
+    font-size: 17px;
+    color: #fff;
+}
+
+.service-info-list li a:hover {
+    text-decoration: underline;
+}
+
+.service-cs {
+    text-align: center;
+    float: right;
+    height: 100%;
+    width: 48.57%;
+    border: 2px solid #fff;
+    background: rgba(28, 87, 154, 0.6);
+}
+
+.service-cs strong {
+    display: block;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 19%;
+}
+
+.service-cs a {
+    font-size: 39px;
+    color: #fff;
+}
+
+.service-cs a:hover {
+    text-decoration: underline;
 }
 
 .service-right {
     float: left;
     width: 23.2%;
     height: 100%;
-    border-top: 3px solid #fff;
     border: 2px solid #fff;
+    border-top: 3px solid #fff;
     margin-left: 1.78%;
     padding: 40px;
 }
@@ -848,12 +1038,12 @@ body {
     right: -45px;
     top: 50%;
     transform: translateY(-50%);
-    display: block;
     width: 34px;
     height: 8px;
-    background: url('../images/arrow_w.png') no-repeat;
+    background: url('../images/main_arrow_fff.png') no-repeat;
+
     opacity: 0;
-    transition: opacity .3s;
+    transition: opacity 0.3s;
 }
 
 .service-list li a:hover {
