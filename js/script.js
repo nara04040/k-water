@@ -66,4 +66,44 @@ window.onload = function () {
         }
     });
 
+    // sid 슬라이드
+    let swSid = new Swiper('.sw-sid', {
+        loop: true,
+        pagination: {
+            el: '.sw-sid-pg',
+            type: 'fraction'
+        },
+        navigation: {
+            prevEl: '.sw-sid-prev',
+            nextEl: '.sw-sid-next'
+        },
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        }
+    });
+
+    // 자동 실행 멈춤/재생
+    let swSidPause = $('.sw-sid-pause');
+    swSidPause.click(function () {
+
+        // 현재 sw-sid-play 클래스 적용중?
+        // true, false
+        let temp = $(this).hasClass('sw-sid-play');
+        if (temp == false) {
+
+            $(this).addClass('sw-sid-play');
+            // 슬라이드 멈추기
+            swSid.autoplay.stop();
+
+        } else {
+
+            $(this).removeClass('sw-sid-play');
+            // 슬라이드 재생
+            swSid.autoplay.start();
+
+        }
+
+    });
+
 };
